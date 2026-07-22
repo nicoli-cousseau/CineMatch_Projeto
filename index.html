@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site especializado em recomendações personalizadas de filmes e séries">
+    <meta name="keywords" content="CinemMatch, Cinema, Séries, Filmes, Perfil Cinéfilo">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>CineMatch</title>
+</head>
+
+<body>
+
+<!--Aqui é onde fica o cabeçalho do site (nome, slogan, home, ranking, quiz, chat ia e busca)-->
+<header>
+    <h1 class="logo laila-bold">CineMatch</h1> <!--Nome do site, no topo, em destaque e em dourado-->
+    <p class="slogan">Chega de rolar: Descubra. Vote. Assista.</p>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Ranking</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Chat IA</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-bar">
+    <span class="material-symbols-outlined">search</span><input type="text" placeholder="Buscar por filme ou série...">
+    </div>
+
+    <img class="avatar" src="assets/imgs/foto-perfil.jpg" alt="Foto de perfil do usuário"> 
+
+</header>
+
+<!--linha horizontal-->
+    <div class="linha-horizontal">
+        <hr>
+    </div>
+
+<section class="destaque-hoje">
+    <h2>🔥Em alta hoje</h2>
+    <!--O card com a imagem e informações vêm aqui dentro-->
+
+    <div class="card-destaque">
+        <img src="assets/imgs/Oppenheimer.webp" class="poster-destaque" alt="Pôster do filme Oppenheimer">
+
+        <div class="info-destaque">
+        <!--Todas as informações do filme em destaque ficam aqui-->        
+        <div class="badges">
+        <span class="badge badge-genero">Drama</span>
+        <span class="badge badge-ano">2023</span>
+    </div>
+    <h3>Oppenheimer</h3>
+    <p>A història do fìsico que liderou o projeto da bomba atômica e as consequências que marcaram o mundo.</p>
+    <div class="plataformas">
+        <span class="plataforma">
+            <span class="material-symbols-outlined">check</span>
+            Prime Video
+        </span>
+        <span class="plataforma">
+            <span class="material-symbols-outlined">check</span>
+            Max
+        </span>
+    </div>
+    <div class="avaliacao">
+        <span class="material-symbols-outlined estrela-cheia">star</span>
+        <span class="material-symbols-outlined estrela-cheia">star</span>
+        <span class="material-symbols-outlined estrela-cheia">star</span>
+        <span class="material-symbols-outlined estrela-cheia">star</span>
+        <span class="material-symbols-outlined estrela-vazia">star_outline</span>
+        <span class="nota">9.2</span>
+        <span class="votos">3.4K votos</span>
+    </div>
+    </div>
+</div>
+</section>
+
+<!--linha horizontal-->
+<div class="linha-horizontal">
+        <hr>
+    </div>
+
+<section class="destaque-semana">
+    <h2>🏆Em destaque està semana</h2>
+    <!--Carrossel de imagens de "destaque da semna/mais votados"-->
+
+    <div class="carrossel-container">
+        <span class="seta-esquerda">
+            <span class="material-symbols-outlined seta">arrow_circle_left</span>
+  </span>
+
+    <div class="carrossel-semana">
+        <div class="carrossel-item">
+            <img src="assets/imgs/Parasita.jpg" class="imagem-carrossel" alt="Pôster do filme Parasita">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.4</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/ClubedaLuta.jpg" class="imagem-carrossel" alt="PÔster do filme Clube da Luta">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.1</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Oppenheimer.webp" class="imagem-carrossel" alt="Pôster do filme Oppenheimer">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.9</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Ela.jpg" class="imagem-carrossel" alt="Pôster do filme Ela">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.8</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Corra.jpg" class="imagem-carrossel" alt="Pôster do filme Corra">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.7</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Dexter.jpg" class="imagem-carrossel" alt="Pôster da série Dexter">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.5</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/OMorrodosVentosUivantes.jpg" class="imagem-carrossel" alt="Pôster do filme O Morro dos Ventos Uivantes">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>7.0</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/BreakingBad.jpg" class="imagem-carrossel" alt="Pôster da série Breaking Bad">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.0</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/AFormadaAgua.jpg" class="imagem-carrossel" alt="Pôster do filme a Forma da Água">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined">star</span>
+                <span>8.0</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/SA_ORetornodoRei.jpg" class="imagem-carrossel" alt="Pôster do filme Senhor dos Anéis: O Retorno do Rei">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.0</span>
+            </div>
+        </div>
+    </div>
+
+  <span class="seta-direita">
+    <span class="material-symbols-outlined seta">arrow_circle_right</span>
+  </span>
+</div>
+</section>
+
+<!--linha horizontal-->
+<div class="linha-horizontal">
+        <hr>
+    </div>
+
+<section class="mais-bem-avaliados">
+    <h2>⭐ Mais bem avaliados</h2>
+    <!--Carrossel de imagens dos filmes/séries mais bem avaliados pelos usuários-->
+
+    <div class="carrossel-container">
+        <span class="seta-esquerda">
+            <span class="material-symbols-outlined seta">arrow_circle_left</span>
+        </span>
+
+    <div class="bem-avaliados">
+        <div class="carrossel-item">
+            <img src="assets/imgs/UmSonhodeLiberdade.jpg" class="imagem-carrossel" alt="Pôster do filme Sonho de Liberdade">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.4</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Parasita.jpg" class="imagem-carrossel" alt="Pôster do filme Parasita">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.4</span>
+            </div>
+    </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Batman-OCavaleirodasTrevas.jpg" class="imagem-carrossel" alt="Pôster do filme Batman: O Cavaleiro das Trevas">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.3</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/12HomenseumaSentença.jpg" class="imagem-carrossel" alt="Pôster do filme 12 Homens e uma Sentença">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.2</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/ClubedaLuta.jpg" class="imagem-carrossel" alt="Pôster do filme Clube da Luta">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.1</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+        <img src="assets/imgs/SA_ORetornodoRei.jpg" class="imagem-carrossel" alt="Pôster do filme Senhor dos Anéis: O Retorno do Rei">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.0</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/BreakingBad.jpg" class="imagem-carrossel" alt="Pôster da série Breaking Bad">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>9.0</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Marley&Eu.jpg" class="imagem-carrossel" alt="Pôster do filme Marley & Eu">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.5</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/Cinderela(2015).jpg" class="imagem-carrossel" alt="Pôster do filme Cinderela (2015)">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.4</span>
+            </div>
+        </div>
+        <div class="carrossel-item">
+            <img src="assets/imgs/OrgulhoePreconceito.jpg" class="imagem-carrossel" alt="Pôster do filme Orgulho e Preconceito">
+            <div class="nota-carrossel">
+                <span class="material-symbols-outlined estrela-cheia">star</span>
+                <span>8.2</span>
+            </div>
+        </div>
+    </div>
+
+<span class="seta-direita">
+    <span class="material-symbols-outlined seta">arrow_circle_right</span>
+  </span>
+</div>
+</section>
+
+<nav class="mobile-nav">
+    <a href="#"><span>🏠</span>Home</a>
+    <a href="#"><span>🏆</span>Ranking</a>
+    <a href="#"><span>❓</span>Quiz</a>
+    <a href="#"><span>🗨️</span>Chat IA</a>
+    <a href="#"><span>👤</span>Perfil</a>
+</nav>
+
+</body>
+</html>
+
+

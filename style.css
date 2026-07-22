@@ -1,0 +1,314 @@
+/*Main Content (fundo, nome e logo)*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: laila;
+}
+
+.logo {
+    color:#C99B1B; 
+    font-weight:bold;
+}
+
+.slogan {
+    color: #ffffff67;
+    font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #000;
+  padding: 24px;
+}
+
+.desktop-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a.active {
+  font-weight: bolder;
+}
+
+.mobile-nav {
+  display:none;
+}
+
+/*Estilização de fontes*/
+.laila-light {
+  font-family: "Laila", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.laila-regular {
+  font-family: "Laila", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.laila-medium {
+  font-family: "Laila", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.laila-semibold {
+  font-family: "Laila", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.laila-bold {
+  font-family: "Laila", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.destaque-hoje {
+  color: white
+}
+
+/*Estilização de símbolos*/
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  color: #C99B1B;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.estrela-cheia {
+  font-variation-settings: 'FILL' 1;
+  color:#C99B1B;
+}
+
+.estrela-vazia {
+  color:#C99B1B;
+}
+
+.seta {
+  font-size: 60px !important;
+}
+
+/*Estilização de imagens*/
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.poster-destaque {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.imagem-carrossel {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*Texto da aba 'destaque'*/
+.card-destaque {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #2A2A2A;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+/*Destaques da semana*/
+.destaque-semana {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+
+.carrossel-semana {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  min-width: 0;
+  flex: 1;
+}
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/*Mais bem avaliados*/
+.mais-bem-avaliados {
+   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+
+.bem-avaliados {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  min-width: 0;
+  flex: 1;
+  margin-bottom: 80px;
+}
+
+/*Estilização de elementos complementares*/
+.badges {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.badge-genero {
+  background-color: #7B2FF7;
+  color: white;
+}
+
+.badge-ano {
+  background-color: #2F80ED;
+  color: white;
+}
+
+.plataformas {
+  display: flex;
+  gap: 16px;
+}
+
+.plataforma {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #42f380; 
+  color:#085523;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nota {
+  color:#C99B1B;
+}
+
+.votos {
+  color:#C99B1B;
+}
+
+.info-destaque {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nota-carrossel {
+  font-weight: bold;
+  color:#C99B1B
+}
+
+.linha-horizantal {
+  border: none;
+  width: 100%;
+  height: 2px;
+  color:#C99B1B;
+}
+
+hr {
+    color:#C99B1B;
+    border:none;
+    border-top: 2px solid #C99B1B;
+    margin: 30px 100px;
+}
+
+@media screen and (max-width:600) {  
+  body {background-color: #000;} 
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 12px 0;
+    z-index: 100;
+  }
+
+  .mobile-nav a {
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .desktop-nav{
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  header .slogan {
+    display: none;
+  }
+
+  header .desktop-nav {
+    display: none;
+  }
+
+  header img.avatar {
+    display: none;
+  }
+} 
+
