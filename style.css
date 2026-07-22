@@ -266,16 +266,17 @@ hr {
     margin: 30px 100px;
 }
 
-@media screen and (max-width:600) {  
-  body {background-color: #000;} 
+@media screen and (max-width:600px) {  
+  body {background-color: #000; width: 100dvw;} 
 
   .mobile-nav {
-    display: flex;
+    display: block;
     justify-content: space-around;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 40px;
     background-color: #000;
     padding: 12px 0;
     z-index: 100;
@@ -287,18 +288,19 @@ hr {
     font-size: 12px;
     text-align: center;
   }
-
+/*
   .desktop-nav{
     display: none;
-  }
+  }*/
 
   header {
     flex-direction: column;
-    align-items: flex-start;
     gap: 12px;
     padding: 16px;
+    position: sticky;
   }
 
+/*
   header .slogan {
     display: none;
   }
@@ -309,6 +311,6 @@ hr {
 
   header img.avatar {
     display: none;
-  }
+  }*/
 } 
 
