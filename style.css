@@ -41,6 +41,10 @@ nav a {
   color: white;
 }
 
+nav a:hover {
+  font-weight: bold;
+}
+
 nav a.active {
   font-weight: bolder;
 }
@@ -311,3 +315,12 @@ hr {
     display: none;
   }
 } 
+
+.carrossel-imagens {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* Internet Explorer/Edge antigo */
+}
+
+.carrossel-imagens::-webkit-scrollbar {
+  display: none;               /* Chrome, Edge novo, Safari */
+}
