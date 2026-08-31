@@ -13,6 +13,12 @@ body {
     font-weight:bold;
 }
 
+.logo-link {
+    text-decoration: none;
+    /* Sem isso, o navegador desenha o sublinhado com a cor padrão
+       de link (o roxo), mesmo com o texto do h1 já em dourado. */
+}
+
 .slogan {
     color: #ffffff67;
     font-weight: bold;
@@ -124,6 +130,12 @@ nav a.active {
 }
 
 /*Estilização de imagens*/
+.poster-link {
+  display: block;
+  /* Faz o link se comportar como um bloco do tamanho exato da imagem,
+     evitando a fresta de espaço que aparece por padrão. */
+}
+
 .avatar {
   width: 100px;
   height: 100px;
@@ -143,6 +155,11 @@ nav a.active {
   height: 280px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.imagem-carrossel:hover {
+  transform: scale(1.1);
 }
 
 /*Texto da aba 'destaque'*/
