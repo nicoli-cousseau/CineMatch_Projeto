@@ -341,3 +341,70 @@ hr {
 .carrossel-imagens::-webkit-scrollbar {
   display: none;               /* Chrome, Edge novo, Safari */
 }
+
+/*Página de detalhes do filme (filme.html)*/
+.detalhe-filme {
+  display: flex;
+  gap: 32px;
+  padding: 32px 100px;
+  color: white;
+}
+
+.poster-detalhe {
+  width: 280px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  /* flex-shrink: 0 impede que o pôster "amasse" quando a tela é estreita */
+}
+
+.info-detalhe {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.acoes-detalhe {
+  display: flex;
+  gap: 12px;
+}
+
+.botao-favoritos,
+.botao-votar {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+}
+
+.botao-favoritos:hover,
+.botao-votar:hover {
+  background-color: #C99B1B;
+  color: #000;
+}
+
+.sinopse {
+  line-height: 1.5;
+}
+
+.review-item {
+  background-color: #2A2A2A;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.review-autor {
+  font-weight: bold;
+  color: #C99B1B;
+  margin-bottom: 4px;
+}
+
+.review-texto {
+  color: #ddd;
+}
