@@ -408,3 +408,56 @@ hr {
 .review-texto {
   color: #ddd;
 }
+
+/*Botão da lupa dentro do formulário de busca*/
+.search-icon-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*Página de resultados de busca (resultados.html)*/
+.resultados {
+  padding: 24px 100px;
+  color: white;
+}
+
+.resultados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card-resultado {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.card-resultado img,
+.card-resultado .sem-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #2A2A2A;
+}
+
+.card-resultado .sem-poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  color: #9aa6b4;
+  font-size: 14px;
+}
+
+.card-resultado p {
+  margin-top: 8px;
+  font-size: 14px;
+}
